@@ -5,18 +5,15 @@ import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import lombok.ToString;
-
 /**
- * 기업이 공고를 등록할 때의 request 객체
+ * 기업이 공고를 수정 때의 request 객체
  */
 @RequiredArgsConstructor
 @ToString
 @Data
-public class SubRecruitingReq {
-    
+public class ModRecruitingReq {
+
     private final int recruiting_id;
-    @NotNull
-    private final int company_id;
     @NotBlank
     private final String position;
     @NotNull
