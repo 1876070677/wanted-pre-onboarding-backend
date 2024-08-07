@@ -13,16 +13,8 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 
 @ControllerAdvice
 public class GlobalExceptionHandler {
-
-    @ExceptionHandler(NullPointerException.class)
-    public ResponseEntity<ResponseMessage> NullPointerException(NullPointerException e) {
-        ResponseMessage msg = new ResponseMessage();
-        msg.setMessage(e.getMessage());
-        return new ResponseEntity<>(msg, HttpStatus.BAD_REQUEST);
-    }
-
     @ExceptionHandler(MethodArgumentNotValidException.class)
-    public ResponseEntity<ResponseMessage> ConstraintViolationException(MethodArgumentNotValidException e) {
+    public ResponseEntity<ResponseMessage> MethodArgumentNotValidException(MethodArgumentNotValidException e) {
         ResponseMessage msg = new ResponseMessage();
         msg.setMessage("입력 인자가 유효하지 않습니다");
         return new ResponseEntity<>(msg, HttpStatus.BAD_REQUEST);
