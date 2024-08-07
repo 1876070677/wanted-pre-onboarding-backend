@@ -1,3 +1,8 @@
+# 버전 관리
+1. Spring boot - 3.2.8
+2. JDK 17 
+3. MySQL - 8.0.37
+
 # Api documentation
 
 ## 공고 관련 기능
