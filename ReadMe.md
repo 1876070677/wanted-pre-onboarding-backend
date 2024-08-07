@@ -5,7 +5,7 @@
 |:--:|------------------------------------|:--:|--------------------------------------|----------------------------------------------------|
 |POST| /recruiting/submit                 |공고 등록| Request body: SubRecruitingReq.class | {<br/>message="success", <br/>data=null<br/>}      |
 |PUT| /recruiting/modify                 |공고 수정| Request body: ModRecruitingReq.class | {<br/>message="success",<br/> data=null<br/>}                     |
-|Delete| /recruiting/delete?rec_id={공고 id}  |공고 삭제| Request param                        | {message="success", data=null}                     |
+|Delete| /recruiting/delete?rec_id={공고 id}  |공고 삭제| Request param                        | {message="success", data=null<br/>}                     |
 |GET| /recruiting/all|모든 공고 조회| None                                 | {<br/>message="success", <br/>data=List\<RecruitingListResp\><br/>} |
 |GET|/recruiting/detail?rec_id={공고 id}|특정 공고 상세 보기| Request param| {<br/>message="success", <br/>data=RecrutingDetailResp<br/>}      |
 |GET|/recruiting/list?search={keyword}|키워드로 공고 검색|Request param| {<br/>message="success", <br/>data=List\<RecruitingListResp\><br/>} |
