@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: wanted_ex
+  profiles:
+    include: db
+  jpa:
+    hibernate:
+      ddl-auto: update
